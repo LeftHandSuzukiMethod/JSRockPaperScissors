@@ -28,6 +28,18 @@ function playRound(playerSelection, computerSelection){
 
 }
 
-const computerSelection = computerPlay()
+function game(){
+    let counter;
+    let playerWins = 0;
+    let ties = 0;
+    let computerWins = 0;
+    for (counter = 0; counter < 5; counter++){
+        console.log(playRound(playerSelection, computerPlay()));
+         
+    }
+
+}
+
+let computerSelection = computerPlay()
 const playerSelection = 'RoCk'
-console.log(playRound(playerSelection, computerSelection))
+game();
